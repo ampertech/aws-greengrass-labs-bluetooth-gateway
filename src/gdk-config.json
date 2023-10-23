@@ -7,7 +7,7 @@
         "build_system" :"zip"
       },
       "publish": {
-        "bucket": "greengrass-component-community-aws-greengrass-labs-bluetooth-gateway",
+        "bucket": "greengrass-community-bluetooth-gateway",
         "region": "us-west-2"
       }
     }

@@ -27,7 +27,7 @@ class BleScanner():
             log.info('Initialising BLE Scanner Class')
 
             # create a scanner object that sends BLE broadcast packets to the ScanDelegate
-            self.scanner = Scanner().withDelegate(ScanDelegate())
+            self.scanner = Scanner(iface=0).withDelegate(ScanDelegate())
             
             log.info('Initialising BLE Scanner Class Complete')
 

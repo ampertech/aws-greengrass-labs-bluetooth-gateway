@@ -69,7 +69,7 @@
       "Lifecycle": {
         "Install" : {
           "Timeout" : 300,
-          "Script" : "python3 -m venv ble; . ble/bin/activate; pip3 install --upgrade pip; pip3 install awsiotsdk bluepy"
+          "Script" : "python3 -m venv ble; . ble/bin/activate; pip3 install --upgrade pip; pip3 install -r {artifacts:decompressedPath}/src/requirements.txt"
         },
         "Run": {
           "Script": ". ble/bin/activate; python3 -u {artifacts:decompressedPath}/src/main.py '{configuration:/GGV2ComponentConfig}'",
